@@ -1,0 +1,6 @@
+@media(max-width: 991px) {
+ header .quicklinks li{
+  padding: 0 5px;
+  border-right: none;
+ }
+}
