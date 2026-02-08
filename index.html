@@ -16,7 +16,7 @@
   <!--                              Header Start                              -->
       
   <Header>
-    <div class="headerTop">
+    <div class="headerTop d-none d-lg-block">
       <div class="container">
 
         <div class="row align-items-center">
@@ -40,7 +40,7 @@
 
       </div>
     </div>
-    <div class="headerMiddle d-noncol-lg-block">
+    <div class="headerMiddle d-none d-lg-block">
       <div class="container">
         <div class="row align-items-center">
           <div class="logo col-lg-3"><a href="#"><img src="./assets/images/Logo (1).png" alt=""></a></div>
@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="headerBottom d-noncol-lg-block">
+    <div class="headerBottom d-none d-lg-block">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
@@ -276,8 +276,7 @@
 
             
           </div>
-        </section>
-                           
+        </section>                      
   <!-- ----------------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------------- -->
 <!--                          Banner Section Part 2                          -->
@@ -415,10 +414,6 @@
                 </div>
               </div>
             </div>
-         
-
-
-
           </div>  
         </div>
       </section>                            
@@ -803,8 +798,8 @@
        </div>
     
      </div>
-       <div class="leftArrow"><iconify-icon icon="fluent:arrow-left-12-regular" width="20" height="20"></iconify-icon></div>
-      <div class="rightArrow"><iconify-icon icon="fluent:arrow-right-12-regular" width="20" height="20"></iconify-icon></div>
+       <div id="psLeftArrow"  class="leftArrow d-block"><iconify-icon icon="fluent:arrow-left-12-regular" width="20" height="20"></iconify-icon></div>
+      <div  id="psRightArrow" class="rightArrow d-block"><iconify-icon icon="fluent:arrow-right-12-regular" width="20" height="20"></iconify-icon></div>
     </div>
 </section>
 <!-- Top Category End -->
@@ -813,9 +808,10 @@
 
 <section id="bnr">
   <div class="container">
-    <div class="bnrRow">
-      <div class="col-lg-4 bnr1">
-          <h5>Best Deals</h5>
+    <div class="row">
+      <div class="col-lg-4 ">
+         <div class="bnr1">
+           <h5>Best Deals</h5>
          <h2>Sale of the Month</h2>
           <div class="bnrCntWrap">
             <div class="bnrCnt">
@@ -848,24 +844,29 @@
 
            <a href="#" class="Btn5">Shop now<iconify-icon icon="ep:right"></iconify-icon></a>
           </div>
-          </div>
-      <div class="col-lg-4 bnr2">
-           <h5>85% Fat Free</h5>
+         </div>
+      </div>
+      <div class="col-lg-4 ">
+          <div class="bnr2">
+             <h5>85% Fat Free</h5>
          <h2>Low-Fat Meat</h2>
          <div class="clr">
           <span class="cnt4">Started at</span>
           <span class="cnt5">$79.99</span>
          </div>
          <a href="#" class="Btn6">Shop now<iconify-icon icon="ep:right"></iconify-icon></a>
+          </div>
          </div>
-      <div class="col-lg-4 bnr3">
-         <h5>Summer Sale</h5>
+      <div class="col-lg-4">
+        <div class="bnr3">
+           <h5>Summer Sale</h5>
          <h2>100% Fresh Fruit</h2>
          <div class="clr2">
           <span class="cnt6">Up to</span>
           <span class="cnt7">64% OFF</span>
          </div>
          <a href="#" class="Btn7">Shop now<iconify-icon icon="ep:right"></iconify-icon></a>
+        </div>
       </div>
   
   </div>
@@ -1013,58 +1014,358 @@
       </section> 
  <!-- Banner Section 5 End -->
 
- <!-- Client Testimonial Start -->
-  <section id="Client">
+  <!-- Client Testimonial Start -->
+<section id="Client">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">    
-        <div class="text">
-      <h2>Client Testimonial</h2>
-      <img src="./assets/images/line.png" alt="">
+      <div class="row align-items-center mb-4">
+      <div class="col-lg-6" class="header">
+        <h2>Client Testimonial</h2>
+        <img src="./assets/images/line.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-6 d-flex justify-content-end">
+        <div class="clientArrow">
+
+         <button type="button" class="arrowBtn prev">
+            <iconify-icon icon="prime:arrow-left"></iconify-icon>
+         </button>
+         <button type="button" class="arrowBtn next">
+            <iconify-icon icon="prime:arrow-right"></iconify-icon>
+         </button>
+        </div>
+      </div>
     </div>
-    </div>
-     
-   <div class="col-lg-6 d-flex justify-content-end align-items-center">
-  <div class="clientArrow">
-    <a href="#" class="arrowBtn prev">
-      <iconify-icon icon="prime:arrow-left"></iconify-icon>
-    </a>
-    <a href="#" class="arrowBtn next">
-      <iconify-icon icon="prime:arrow-right"></iconify-icon>
-    </a>
-  </div>
-     </div>
-    </div>
-     <div class="col-lg-4">
+     <div class="client_slider">
        <div class="clientCard">
          <div class="clientItem">
-           <img class="apostrophe" src="./assets/images/apostrophe.png" alt=""> 
+          <div class="clientcnt">
+             <img class="apostrophe" src="./assets/images/apostrophe.png" class="img-fluid" alt=""> 
+            <h5>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</h5> 
+          </div>
             
-           <div class="clientText">
-             <h5>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</h5> 
-           <img src="./assets/images/client1.png" alt=""> 
-           <h4>Robert Fox</h4> 
-           <p>Customer</p> 
-           </div>
-           </div> 
+          <div class="clientText">
 
-           <div class="reviews">
-           <iconify-icon icon="material-symbols-light:star"></iconify-icon>
-           <iconify-icon icon="material-symbols-light:star"></iconify-icon>
-           <iconify-icon icon="material-symbols-light:star"></iconify-icon>
-           <iconify-icon icon="material-symbols-light:star"></iconify-icon>
-           <iconify-icon icon="material-symbols-light:star"></iconify-icon> 
-          </div>  
-        </div> 
+                 <div class="clientInfo">
+                   <img src="./assets/images/client1.png" class="img-fluid" alt=""> 
+                  <div>
+                   <h4>Robert Fox</h4> 
+                   <p>Customer</p> 
+                  </div>
+                 </div>
+
+             <div class="review">
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+            </div>
+         </div>
+        </div>
+      </div>  
+     
+       <div class="clientCard">
+         <div class="clientItem">
+          <div class="clientcnt">
+             <img class="apostrophe" src="./assets/images/apostrophe.png" class="img-fluid" alt=""> 
+            <h5>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</h5> 
+          </div>
+            
+          <div class="clientText">
+
+                 <div class="clientInfo">
+                   <img src="./assets/images/client2.png" class="img-fluid" alt=""> 
+                  <div>
+                   <h4>Robert Fox</h4> 
+                   <p>Customer</p> 
+                  </div>
+                 </div>
+
+             <div class="review">
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+            </div>
+         </div>
+        </div>
       </div> 
+    
+    
+       <div class="clientCard">
+         <div class="clientItem">
+          <div class="clientcnt">
+             <img class="apostrophe" src="./assets/images/apostrophe.png" class="img-fluid" alt=""> 
+            <h5>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</h5> 
+          </div>
+            
+          <div class="clientText">
+
+                 <div class="clientInfo">
+                   <img src="./assets/images/client3.png" class="img-fluid" alt=""> 
+                  <div>
+                   <h4>Robert Fox</h4> 
+                   <p>Customer</p> 
+                  </div>
+                 </div>
+
+             <div class="review">
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+            </div>
+         </div>
+        </div>
+      </div>
 
 
-     <div class="clientCard"></div> 
-     <div class="clientCard"></div>
+       <div class="clientCard">
+         <div class="clientItem">
+          <div class="clientcnt">
+             <img class="apostrophe" src="./assets/images/apostrophe.png" class="img-fluid" alt=""> 
+            <h5>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</h5> 
+          </div>
+            
+          <div class="clientText">
+
+                 <div class="clientInfo">
+                   <img src="./assets/images/client2.png" class="img-fluid" alt=""> 
+                  <div>
+                   <h4>Robert Fox</h4> 
+                   <p>Customer</p> 
+                  </div>
+                 </div>
+
+             <div class="review">
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+                 <iconify-icon icon="material-symbols-light:star"></iconify-icon>
+            </div>
+         </div>
+        </div>
+      </div>
+     </div>  
     </div>
+   </section> 
+ <!-- Client Testimonial End -->
+
+<!-- Instagram Section Start -->
+ <section id="insta">
+  <div class="container">
+     <div class="instaCnt">
+      <h2>Follow us on Instagram</h2>
+     </div>
+     <div class="row">
+                <div class="col-lg-2 col-md-2 col-6 mb-3 mb-lg-0">
+                    <div class="ig_cnt">
+                        <img src="./assets/images/insta1.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="overlay_info">
+                                <a href="#"><iconify-icon icon="qlementine-icons:instagram-16"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 mb-3 mb-lg-0">
+                    <div class="ig_cnt">
+                        <img src="./assets/images/insta2.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="overlay_info">
+                                <a href="#"><iconify-icon icon="qlementine-icons:instagram-16"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 mb-3 mb-lg-0">
+                    <div class="ig_cnt">
+                        <img src="./assets/images/insta3.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="overlay_info">
+                                <a href="#"><iconify-icon icon="qlementine-icons:instagram-16"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 mb-3 mb-lg-0">
+                    <div class="ig_cnt">
+                        <img src="./assets/images/insta4.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="overlay_info">
+                                <a href="#"><iconify-icon icon="qlementine-icons:instagram-16"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 mb-3 mb-lg-0">
+                    <div class="ig_cnt">
+                        <img src="./assets/images/insta5.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="overlay_info">
+                                <a href="#"><iconify-icon icon="qlementine-icons:instagram-16"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-6 mb-3 mb-lg-0">
+                    <div class="ig_cnt">
+                        <img src="./assets/images/insta3.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="overlay_info">
+                                <a href="#"><iconify-icon icon="qlementine-icons:instagram-16"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+     </div>
+ </section>
+<!-- Instagram Section End -->
+
+<!-- Last Section Starts here -->
+  <section id="lastBanner">
+    <div class="container">
+      <div class="row">
+         <div class="logo col-lg-3"><a href="#"><img src="./assets/images/Logo (1).png" alt=""></a>
+          </div>
+            <div class="col-lg-3">
+              <h4>Subcribe our Newsletter</h4>
+                <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+            </div>
+            <div class="col-lg-6">
+               <div class="searchArea2">
+                  <form>
+                      <input type="search" placeholder="Your email address">
+                        <button>Subscribe</button>
+                   </form>
+              </div>
+            </div>
+      </div>
     </div>
   </section>
- <!-- Client Testimonial End -->
+<!-- Last Section Ends here -->
+
+<!-- Footer Section Starts here -->
+ <footer id="footer">
+  <div class="container">
+    <div class="row footerTop">
+
+      <div class="col-lg-3">
+        <div class="description">
+          <h4>About Shopery</h4>
+          <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+          <a class="number" href="tel:(219) 555-0114">(219) 555-0114</a>
+          <span>or</span>
+          <a class="number" href="tel:Proxy@gmail.com">Proxy@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="myaccount">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Shoping Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+         <div class="Helps">
+          <h4>Helps</h4>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Faqs</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+         <div class="Proxy">
+          <h4>Proxy</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Products Details</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+                <div class="download_apps">
+                    <h5>Download Our Mobile App</h5>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-6">
+                            <div class="appstore">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <span class="apps_logo"><iconify-icon icon="ic:baseline-apple"></iconify-icon></span>
+                                    </div>
+                                    <div class="col-9">
+                                        <a href="#">
+                                            Download on the <span>App Store</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-6">
+                            <div class="playstore">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3 col-3">
+                                        <span class="apps_logo"><iconify-icon icon="mage:playstore"></iconify-icon></span>
+                                    </div>
+                                    <div class="col-lg-9 col-9">
+                                         <a href="#">
+                                            Download on the <span>Play Store</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="row bottomRow">
+        <div class="col-lg-4">
+          <div class="social">
+            <ul>
+              <li><a href="#"><iconify-icon icon="basil:facebook-solid" width="30" height="30"></iconify-icon></a></li>
+              <li><a href="#"><iconify-icon icon="mingcute:twitter-line" width="30" height="30"></iconify-icon></a></li>
+              <li><a href="#"><iconify-icon icon="jam:pinterest" width="30" height="30"></iconify-icon></a></li>
+              <li><a href="#"><iconify-icon icon="basil:instagram-outline" width="30" height="30"></iconify-icon></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="miniInfo d-lg-flex align-items-end">
+            <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+          </div>
+        </div>
+        
+          <div class="col-lg-4">
+              <div class="payment">
+                <img src="./assets/images/payment.png" alt="">
+              </div>
+          </div>
+
+     </div>
+ </div>
+ </footer>
+<!-- Footer Section Ends here -->
  </main>
 
 

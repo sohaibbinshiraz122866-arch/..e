@@ -42,7 +42,7 @@ iconify-icon{
 }
 
 ul,ol{
-  list-style: none;
+  list-style: none !important;
 }
 
 a{
@@ -340,7 +340,6 @@ transition: 0.2s;
 #banner{
 border-radius: 8px;
 width: 100%;
-height: 804px;
 background: var(--gren-gray-scale-50);
 }
 #banner .bannerCnt h6{
@@ -398,7 +397,6 @@ gap: 16px;
   background-repeat: no-repeat;
   background-size: contain;    
   background-position: center 40%;  
-  min-height: 804px;
 }
 #banner .bannerImg2{
   background-image: url("../images/veg2.png");
@@ -437,7 +435,7 @@ border-radius: 8px;
 padding: 40px;
 box-shadow: 0 8px 40px 0 rgba(0, 38, 3, 0.08);
 background: var(--gray-scale-white);
-transform: translateY(-50%);
+transform: translateY(+50%);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -477,7 +475,7 @@ color: var(--gray-scale-gray-–-900);
   justify-content: center;
 }
 
-.slick-dots button{
+.slick-dots li button{
   color: transparent;
   border: none;
   background-color: var(--branding-success-bright);
@@ -488,7 +486,7 @@ color: var(--gray-scale-gray-–-900);
   border-radius: 20px;
 }
 
-.slick-dots .slick-active button{
+.slick-dots li.slick-active button{
   background-color: var(--branding-success);
   width: 15px;
 }
@@ -1123,9 +1121,18 @@ stroke-width: 1.50px;
 
 /* Client Testimonial Start */
 #Client{
-  margin-top: 100px;
-  background: var(--gren-gray-scale-50);
+ margin-top: 100px;
+ background: var(--gren-gray-scale-50);
 }
+
+#Client h2{
+  margin-top: 50px;
+}
+
+#Client .clientArrow{
+  margin-top: 50px;
+}
+
 
 #Client .text h2{
 font-weight: 600;
@@ -1178,7 +1185,7 @@ stroke-width: 1.50px;
 #Client .clientCard .clientItem{
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   background: var(--gray-scale-white);
 }
 
@@ -1212,11 +1219,434 @@ margin-bottom: 16px;
   padding: 24px;
 }
 
+#Client .clientText{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
 
+#Client .clientText .clientInfo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#Client .clientText .clientInfo h4{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--gray-scale-gray-–-900);
+}
+#Client .clientText .clientInfo p{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: var(--gray-scale-gray-–-400);
+}
 
+#Client .clientText img{
+  border-radius: 50%;
+}
 
+#Client .clientText .review{
+  display: flex;
+  gap: 2px;
+  color: var(--branding-warning);
+}
+
+.client_slider .clientCard {
+  padding: 0 12px;
+}
+
+.client_slider {
+  margin: 0 -12px;
+}
+
+#Client .slick-dots{
+  bottom: -10px;
+}
+
+#Client .clientCard{
+  transform: translateY(-20px);
+}
 
 
 
 
 /* Client Testimonial End */
+
+/* Instagram Section Start */
+#insta{
+  margin-top: 100px;
+  background: var(--gray-scale-white);
+}
+
+#insta .instaCnt h2{
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+text-align: center;
+color: var(--gray-scale-gray-–-900);
+margin-bottom: 32px;
+}
+
+#insta .instaImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#insta .ig_cnt{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#insta .ig_cnt img{
+  width: 100%;
+  display: block;
+}
+
+/* overlay layer */
+#insta .ig_cnt .overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+/* hover effect */
+#insta .ig_cnt:hover .overlay{
+  opacity: 1;
+}
+
+/* icon style */
+#insta .ig_cnt .overlay_info iconify-icon{
+  font-size: 36px;
+  color: #fff;
+}
+/* Instagram Section End */
+
+ /* Last Section Starts here */
+ #lastBanner{
+  margin-top: 100px;
+  background: var(--gray-scale-gray-–-50);
+ }
+
+ #lastBanner .container {
+  padding-top: 50px;
+}
+
+ #lastBanner .col-lg-3 h4{
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-900);
+ }
+
+ #lastBanner .col-lg-3 p{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-400);
+ }
+
+ #lastBanner p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ #lastBanner{
+  padding-bottom: 30px;
+}
+
+.searchArea2 form{
+  display: flex;
+  border: 1px solid #E6E6E6;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 52px;
+  background: #fff;
+}
+
+.searchArea2 input{
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 18px;
+  font-size: 14px;
+}
+
+.searchArea2 input::placeholder{
+  color: #999;
+}
+
+.searchArea2 button{
+  width: 162px;
+  height: 52px;
+  border-radius: 43px;
+  padding: 16px 40px;
+  background: #00B207;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  flex-shrink: 0;
+}
+
+.searchArea2 button:hover{
+  background: #009e06;
+}
+ /* Last Section Ends here */
+
+ /* Footer Section Starts here */
+ #footer{
+ background: var(--gray-scale-gray-–-900);
+ padding-top: 50px;
+}
+
+#footer .description h4{
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 16px;
+}
+
+#footer .description p{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-500);
+margin-bottom: 16px;
+}
+#footer .description .number{
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);;
+}
+#footer .description span{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-500);
+}
+
+#footer .description .number{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+  color: var(--gray-scale-white);
+  transition: 0.3s;
+}
+
+#footer .description .number::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--branding-success);
+  transition: 0.3s;
+}
+
+#footer .description .number:hover::after{
+  width: 100%;
+}
+
+#footer .myaccount h4{
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 20px;
+}
+
+#footer .myaccount ul li{
+  margin-bottom: 8px;
+}
+
+#footer .myaccount ul li a{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-400);
+}
+
+#footer .myaccount ul li a:hover{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);
+}
+
+
+#footer .Helps h4{
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 20px;
+}
+
+#footer .Helps ul li{
+  margin-bottom: 8px;
+}
+
+#footer .Helps ul li a{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-400);
+}
+
+#footer .Helps ul li a:hover{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);
+}
+
+#footer .Proxy h4{
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 20px;
+}
+
+#footer .Proxy ul li{
+  margin-bottom: 8px;
+}
+
+#footer .Proxy ul li a{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-400);
+}
+
+#footer .Proxy ul li a:hover{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);
+}
+
+#footer .download_apps h5{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#footer .download_apps .appstore,
+#footer .download_apps .playstore{
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: 0.3s;
+}
+
+#footer .download_apps .appstore:hover,
+#footer .download_apps .playstore:hover{
+  background: var(--branding-success);
+  border-color: var(--branding-success);
+}
+
+#footer .download_apps a{
+  display: block;
+  font-size: 10px;
+  line-height: 140%;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#footer .download_apps a span{
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#footer .download_apps .apps_logo{
+  font-size: 26px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .download_apps .appstore:hover a,
+#footer .download_apps .playstore:hover a{
+  color: #fff;
+}
+
+
+
+#footer .download h4{
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--gray-scale-white);
+margin-bottom: 20px;
+}
+
+#footer .footerTop{
+  padding-bottom: 80px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--gray-scale-gray-–-800);
+}
+#footer .social ul{
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+#footer .social ul li a{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-scale-white);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#footer .social ul li a:hover{
+  background: var(--branding-success);
+  color: #fff;
+}
+
+#footer .miniInfo p{
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-500);
+}
+
+#footer .payment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ /* Footer Section Ends here */
